@@ -1,38 +1,75 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 .App {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background: gray;
+}
+
+.List {
+  width: 100%;
+  background: green;
+  height: 400px;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  height: 110px;
+}
+.item_text{
+  display: flex;
+  gap: 50px;
+}
+
+
+.header {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+  height: 70px;
+  background: rgb(173, 166, 166);
+  color: white;
+  font-size: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.modal {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  box-shadow: black;
+  width: 75%;
+  height: 60%;
+  background: rgb(218, 225, 228);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+form {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+label {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.invalid-input {
+  border: 3px solid red;
 }
